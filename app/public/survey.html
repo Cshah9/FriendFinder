@@ -162,18 +162,18 @@
 		console.log("validate fields");
 		var valid = "";
 
-		// if($("#name").val().trim()=="") valid += "name\n";
-		// if($("#photo").val().trim()=="") valid += "photo\n";
-		// if($("#q1").val().trim()=="") valid += "question 1\n";
-		// if($("#q2").val().trim()=="") valid += "question 2\n";
-		// if($("#q3").val().trim()=="") valid += "question 3\n";
-		// if($("#q4").val().trim()=="") valid += "question 4\n";
-		// if($("#q5").val().trim()=="") valid += "question 5\n";
-		// if($("#q6").val().trim()=="") valid += "question 6\n";
-		// if($("#q7").val().trim()=="") valid += "question 7\n";
-		// if($("#q8").val().trim()=="") valid += "question 8\n";
-		// if($("#q9").val().trim()=="") valid += "question 9\n";
-		// if($("#q10").val().trim()=="") valid += "question 10\n";
+		if($("#name").val().trim()=="") valid += "name\n";
+		if($("#photo").val().trim()=="") valid += "photo\n";
+		if($("#q1").val().trim()=="") valid += "question 1\n";
+		if($("#q2").val().trim()=="") valid += "question 2\n";
+		if($("#q3").val().trim()=="") valid += "question 3\n";
+		if($("#q4").val().trim()=="") valid += "question 4\n";
+		if($("#q5").val().trim()=="") valid += "question 5\n";
+		if($("#q6").val().trim()=="") valid += "question 6\n";
+		if($("#q7").val().trim()=="") valid += "question 7\n";
+		if($("#q8").val().trim()=="") valid += "question 8\n";
+		if($("#q9").val().trim()=="") valid += "question 9\n";
+		if($("#q10").val().trim()=="") valid += "question 10\n";
 
 		console.log("valid", valid);
 		if(valid != "") alert("Please enter the following fields:\n"+valid);
