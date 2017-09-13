@@ -25,8 +25,8 @@ app.use(express.static("./public"));
 
 // Routes =============================================================
 
+require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
-// require("./app/routing/apiRoutes.js")(app);
 
 
 app.listen(PORT, function() {
