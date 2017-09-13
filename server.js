@@ -6,7 +6,7 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
-var path = require('path');
+// var path = require('path');
 
 // Sets up the Express App
 // =============================================================
@@ -25,7 +25,7 @@ app.use(express.static("./public"));
 
 // Routes =============================================================
 
-// require("./app/routing/htmlRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 // require("./app/routing/apiRoutes.js")(app);
 
 

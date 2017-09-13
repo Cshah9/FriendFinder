@@ -2,8 +2,13 @@
 <html>
 <head>
 	<title>FriendFinder SURVEY</title>
-	<!-- Latest compiled and minified CSS -->
+	<!-- Bootstrap Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- JQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -22,13 +27,13 @@
 			  </div>
 			  <div class="panel-body">
 			    	<div class="input-group input-group-lg">
-					  <span class="input-group-addon" id="name">Name</span>
-					  <input type="text" class="form-control" placeholder="Name (required)" aria-describedby="sizing-addon1">
+					  <span class="input-group-addon" >Name</span>
+					  <input type="text" id="name" class="form-control" placeholder="Name (required)" aria-describedby="sizing-addon1">
 					</div>
 					<br>
 			    	<div class="input-group input-group-lg">
-					  <span class="input-group-addon" id="photo">Photo URL</span>
-					  <input type="text" class="form-control" placeholder="Photo URL (required)" aria-describedby="sizing-addon1">
+					  <span class="input-group-addon" >Photo URL</span>
+					  <input type="text" id="photo" class="form-control" placeholder="Photo URL (required)" aria-describedby="sizing-addon1">
 					</div>
 			  </div>
 			</div>
@@ -40,81 +45,138 @@
 			    <h2 class="panel-title">Survey</h2>
 			  </div>
 			  <div class="panel-body">
-			    
-				    <div class="row">
+			    <form>
+				    <div class="form-group">
 						<div class="input-group input-group-lg">
-						  <span class="input-group-addon" id="q1">1. Do you enjoy learning new things?</span>
-						  <input type="text" class="form-control" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
+						  <span class="input-group-addon">1. Do you enjoy learning new things?</span>
+						  <input type="text" class="form-control" id="q1" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
 						</div>  					
 					</div>
 					<br>
-					<div class="row">
+					<div class="form-group">
 						<div class="input-group input-group-lg">
-						  <span class="input-group-addon" id="q2">2. Do you like to help others?</span>
-						  <input type="text" class="form-control" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
+						  <span class="input-group-addon">2. Do you like to help others?</span>
+						  <input type="text" class="form-control" id="q2" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
 						</div>  					
 					</div>
 					<br>
-					<div class="row">
+					<div class="form-group">
 						<div class="input-group input-group-lg">
-						  <span class="input-group-addon" id="q3">3. Do you like Apple computers more than PCs?</span>
-						  <input type="text" class="form-control" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
+						  <span class="input-group-addon">3. Do you like Apple computers more than PCs?</span>
+						  <input type="text" class="form-control" id="q3" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
 						</div>  					
 					</div>
 					<br>
-					<div class="row">
+					<div class="form-group">
 						<div class="input-group input-group-lg">
-						  <span class="input-group-addon" id="q4">4. Do you like playing Clash of Clans?</span>
-						  <input type="text" class="form-control" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
+						  <span class="input-group-addon">4. Do you like playing Clash of Clans?</span>
+						  <input type="text" class="form-control" id="q4" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
 						</div>  					
 					</div>
 					<br>
-					<div class="row">
+					<div class="form-group">
 						<div class="input-group input-group-lg">
-						  <span class="input-group-addon" id="q5">5. Do you like to watch sports?</span>
-						  <input type="text" class="form-control" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
+						  <span class="input-group-addon">5. Do you like to watch sports?</span>
+						  <input type="text" class="form-control" id="q5" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
 						</div>  					
 					</div>
 					<br>
-					<div class="row">
+					<div class="form-group">
 						<div class="input-group input-group-lg">
-						  <span class="input-group-addon" id="q6">6. Do you like to play sports?</span>
-						  <input type="text" class="form-control" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
+						  <span class="input-group-addon">6. Do you like to play sports?</span>
+						  <input type="text" class="form-control" id="q6" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
 						</div>  					
 					</div>
 					<br>
-					<div class="row">
+					<div class="form-group">
 						<div class="input-group input-group-lg">
-						  <span class="input-group-addon" id="q7">7. Do you like classical music?</span>
-						  <input type="text" class="form-control" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
+						  <span class="input-group-addon">7. Do you like classical music?</span>
+						  <input type="text" class="form-control" id="q7" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
 						</div>  					
 					</div>
 					<br>
-					<div class="row">
+					<div class="form-group">
 						<div class="input-group input-group-lg">
-						  <span class="input-group-addon" id="q8">8. Do you like jazz music?</span>
-						  <input type="text" class="form-control" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
+						  <span class="input-group-addon">8. Do you like jazz music?</span>
+						  <input type="text" class="form-control" id="q8" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
 						</div>  					
 					</div>
 					<br>
-					<div class="row">
+					<div class="form-group">
 						<div class="input-group input-group-lg">
-						  <span class="input-group-addon" id="q9">9. Do you have a smart speaker system?</span>
-						  <input type="text" class="form-control" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
+						  <span class="input-group-addon">9. Do you have a smart speaker system?</span>
+						  <input type="text" class="form-control" id="q9" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
 						</div>  					
 					</div>
 					<br>
-					<div class="row">
+					<div class="form-group">
 						<div class="input-group input-group-lg">
-						  <span class="input-group-addon" id="q10">10. Do you have a smart home system?</span>
-						  <input type="text" class="form-control" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
+						  <span class="input-group-addon">10. Do you have a smart home system?</span>
+						  <input type="text" class="form-control" id="q10" placeholder="Enter 1 for Strongly Disagree up to 5 for Strongly Agree" aria-describedby="sizing-addon1">
 						</div>  					
 					</div>
+					
+						
+					<input class="btn btn-success" id="submit" type="submit" value="Submit">
+				</form>
 			</div>
 		</div>
 
 
 	</div>
 
+	<script>
+	
+
+	$("#submit").on("click", function(){ 
+		event.preventDefault();
+		console.log("submit clicked"); 
+		console.log("validate fields");
+		var valid = "";
+
+		// if($("#name").val().trim()=="") valid += "name\n";
+		// if($("#photo").val().trim()=="") valid += "photo\n";
+		// if($("#q1").val().trim()=="") valid += "question 1\n";
+		// if($("#q2").val().trim()=="") valid += "question 2\n";
+		// if($("#q3").val().trim()=="") valid += "question 3\n";
+		// if($("#q4").val().trim()=="") valid += "question 4\n";
+		// if($("#q5").val().trim()=="") valid += "question 5\n";
+		// if($("#q6").val().trim()=="") valid += "question 6\n";
+		// if($("#q7").val().trim()=="") valid += "question 7\n";
+		// if($("#q8").val().trim()=="") valid += "question 8\n";
+		// if($("#q9").val().trim()=="") valid += "question 9\n";
+		// if($("#q10").val().trim()=="") valid += "question 10\n";
+
+		console.log("valid", valid);
+		if(valid != "") alert("Please enter the following fields:\n"+valid);
+		else {
+			console.log("submitting survey...");
+			var answers = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				q1: $("#q1").val().trim(),
+				q2: $("#q2").val().trim(),
+				q3: $("#q3").val().trim(),
+				q4: $("#q4").val().trim(),
+				q5: $("#q5").val().trim(),
+				q6: $("#q6").val().trim(),
+				q7: $("#q7").val().trim(),
+				q8: $("#q8").val().trim(),
+				q9: $("#q9").val().trim(),
+				q10: $("#q10").val().trim()
+			}
+
+			console.log ("answers", answers);
+			 $.post("/api/friends", answers, function() {
+			      // window.location.href = "/blog";
+			      console.log("post complete");
+			    });
+		}
+
+
+
+	});
+		
+	</script>
 </body>
 </html>
