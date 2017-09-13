@@ -28,7 +28,8 @@ module.exports = function(app) {
     }
     console.log("totals", totals);
 
-    if (totals[0]<=totals[1]) {res.json({name:friends[0].name, photo:friends[1].photo})};
+    if (totals[0]<=totals[1]) res.json({name:friends[0].name, photo:friends[0].photo});
+    else res.json({name:friends[1].name, photo:friends[1].photo});
 
   });
 

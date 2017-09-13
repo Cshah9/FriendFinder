@@ -2,13 +2,17 @@
 <html>
 <head>
 	<title>FriendFinder SURVEY</title>
-	<!-- Bootstrap Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<!-- JQuery -->
 	<script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
+  	<!-- Bootstrap Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	  <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -127,6 +131,28 @@
 
 	</div>
 
+
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">Close</button>
+	        <h2 class="modal-title"><strong>Found your Friend!</strong></h2>
+	      </div>
+	      <div class="modal-body">
+	        <h2 id="friendName"></h2>
+	        <img id="friendImg" src="" alt="">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
 	<script>
 	
 
@@ -176,6 +202,15 @@
 			      // window.location.href = "/blog";
 			      console.log("post complete");
 			      console.log(data);
+			      console.log(data.name);
+			      console.log(data.photo);
+			      // var myData = JSON.parse(data)
+			      $("#friendName").text(data.name);
+	    		$('#friendImg').attr("src", data.photo);
+
+		    	// Show the modal with the best match 
+		    	$("#myModal").modal('toggle');
+
 			    });
 		}
 
